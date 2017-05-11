@@ -1,14 +1,11 @@
 $(document).ready(function(){
+	var x=16;
 	init();
 });
 
 function init(){
-	$c=$('#container');
-	for(i>0,i<320,i++){
-		$c.append("<div class='squares'></div>");
-	}	
-	$div=$('.squares');
-	$div.css('width', 10);
-	$div.css('height', 10);	
-	$div.css('color','blue');
-};
+	for( var x=0; x<16; x++){
+		for(var y=0; y<16; y++){
+			$('#container').append("<div class='squares'></div>");		}
+	}
+}
